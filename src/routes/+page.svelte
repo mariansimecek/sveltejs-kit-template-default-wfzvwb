@@ -1,14 +1,14 @@
-<script >
-  import TextInput from './TextInput.svelte';
+<script>
+	import TextInput from './TextInput.svelte';
 
-  let value = $state('');
-  const _snippet = snippet
+	let value = $state('');
+	const _snippet = snippet;
 </script>
 
 {#snippet snippet()}
-  Something
+	Something
 {/snippet}
 
 <TextInput bind:value />
-value:
-{value}
+value: {value}
+
